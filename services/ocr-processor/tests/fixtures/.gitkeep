@@ -1,0 +1,11 @@
+# Test fixtures
+
+Esta carpeta contiene imágenes de prueba de facturas chilenas para testing.
+
+Agregar aquí:
+- Facturas de muestra (sin datos sensibles)
+- Boletas
+- Notas de crédito
+- Otros documentos tributarios
+
+Usar en los tests para validar el parser y OCR.

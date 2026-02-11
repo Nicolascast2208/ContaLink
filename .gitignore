@@ -1,0 +1,138 @@
+# ============================================
+# SEGURIDAD CRÍTICA - NO SUBIR CREDENCIALES
+# ============================================
+
+# Service Account Keys (Firebase, Google Cloud)
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!app.json
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Firebase config específicos
+google-services.json
+GoogleService-Info.plist
+
+# Carpeta de keys
+keys/
+credentials/
+
+# ============================================
+# FRONTEND (React Native / Expo)
+# ============================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native builds (generados por EAS)
+android/
+ios/
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# Debugging
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+*.cache
+.cache/
+
+# ============================================
+# BACKEND (Python)
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================
+# DEPLOYMENT
+# ============================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Docker
+*.log
+.dockerignore
